@@ -15,6 +15,8 @@ There are two folders in this repository **cpp** and **python** which contain C+
 
 Make sure you use **C++17 or later** and **Python 3.6 or later**
 
+**Hint:** It would best if you start bazelization as soon as you finish your first task instead of finishing all tasks first and then bazelizing them.
+
 ## 2. Bazelize proving-grounds repository
 
 Each task you solved in the first section is a single package which needs to be bazelized. In order for the repository to be considered as bazelized, the following must be true:
