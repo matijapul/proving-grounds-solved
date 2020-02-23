@@ -1,7 +1,16 @@
+- job:
+  name: bazel-build-and-test
+  run: playbooks/bazel_build_and_test.yaml
+
 - project:
-    check:
-      jobs:
-        - noop
-    gate:
-      jobs:
-        - noop
+  test:
+    jobs:
+      - noop
+  check:
+    jobs:
+      - bazel-build-and-test
+      - noop
+  gate:
+    jobs:
+      - bazel-build-and-test
+      - noop

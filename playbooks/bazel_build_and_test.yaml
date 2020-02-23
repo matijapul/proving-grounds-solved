@@ -1,0 +1,11 @@
+- hosts: all
+  tasks:
+    - name: Run bazel build
+      shell: |
+        cd src/gerrit/proving-grounds/
+        bazel build //...
+
+    - name: Run bazel test
+      shell: |
+        cd src/gerrit/proving-grounds/
+        bazel test //...

@@ -9,8 +9,9 @@ if you implemented the reverse function as a method within a class).
 */
 
 TEST(reverseInteger, checkReverse){
-  EXPECT_EQ(reverse(0), 0);
-  EXPECT_EQ(reverse(123), 321);
-  EXPECT_EQ(reverse(-123), -321);
-  EXPECT_EQ(reverse(120), 21);
+  ReverseInteger testObject;
+  EXPECT_EQ(testObject.reverse(0), 0);
+  EXPECT_EQ(testObject.reverse(123), 321);
+  EXPECT_EQ(testObject.reverse(-123), -321);
+  EXPECT_EQ(testObject.reverse(120), 21);
 }
