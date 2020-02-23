@@ -1,0 +1,12 @@
+- project:
+    test:
+      jobs:
+        - noop
+    check:
+      jobs:
+        - bazel-build-and-test
+        - noop
+    gate:
+      jobs:
+        - bazel-build-and-test
+        - noop

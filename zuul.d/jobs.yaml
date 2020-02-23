@@ -1,0 +1,3 @@
+- job:
+    name: bazel-build-and-test
+    run: playbooks/bazel_build_and_test.yaml
