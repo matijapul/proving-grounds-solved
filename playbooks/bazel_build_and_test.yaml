@@ -1,11 +1,12 @@
 - hosts: all
-  tasks:
+  tasks:    
     - name: Run bazel build
       shell: |
-        cd src/gerrit/proving-grounds/
+        cd /root/src/gerrit/proving-grounds/
         bazel build //...
 
     - name: Run bazel test
       shell: |
-        cd src/gerrit/proving-grounds/
-        bazel test //...
+        cd /root/src/gerrit/proving-grounds/
+        bazel test --test_output=all --cache_test_results=no //...
+        

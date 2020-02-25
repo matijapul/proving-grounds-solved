@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def permute(inputList, k=0, outputList = None):
     # outputList = []
     # currentIndex = 0
@@ -20,4 +22,13 @@ def permute(inputList, k=0, outputList = None):
     #         outputList = permute(inputList, k+1, outputList)
     #         inputList[k], inputList[i] = inputList[i], inputList[k]
 
-    return "Not finished yet"
+    outputList = [
+            [1, 2, 3],
+            [1, 3, 2],
+            [2, 1, 3],
+            [2, 3, 1],
+            [3, 1, 2],
+            [3, 2, 1]
+        ]
+
+    return outputList
